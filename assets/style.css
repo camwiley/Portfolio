@@ -29,9 +29,9 @@ header.navBar {
     font-weight: bolder;
     font-size: 32pt;
 }
+
 .links {
     padding: 3px;
-    float: right;
     text-align: center;
     /* margin-top: 0px; */
     display: flex;
@@ -51,13 +51,12 @@ span {
 }
 ul{
     width: auto;
-    float: right;
     margin-top: 8px;
     padding: 3px;
     color: white;
-    margin-right: 30px;
 }
 li {
+    align-content: center;
     display: inline;
     padding: 15px 30px;
 }
@@ -70,6 +69,7 @@ li {
     background-image: url(https://image.shutterstock.com/image-vector/starry-night-particles-dust-sky-260nw-564870487.jpg);
 }
 .landing-section1 {
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -140,24 +140,25 @@ h1:hover {
     text-align: center;
     padding: 26px;
 }
+
 .aboutme-header {
     width: 100%;
     text-align: center;
     font-weight: 900;
 }
-.work {
+.apps {
     max-width: 100%;
     height: 535px;
     border: 1px solid white;
     text-align: center;  
     padding: 26px;
 }
-.work-header {
+.apps-header {
     width: 100%;
     text-align: center;
     font-weight: 900;
 }
-.work-content {
+.apps-content {
     padding-top: 20px;
 }
 .contact {
@@ -202,6 +203,7 @@ h1:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 .flexbox-item-3:hover {
     border: 3px solid rgb(129, 212, 244);
@@ -213,6 +215,8 @@ h1:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    position: relative;
 }
 .contact-header {
     width: 100%;
@@ -221,21 +225,21 @@ h1:hover {
 }
 .form-container {
     place-items: center;
+    height: 100%;
+    position: relative;
 }
 form.contact-form {
     display: table;
     margin: 20px auto;
 }
-
 .contact-form {
     display: table-row;
     position: relative;
 }
-
 label, input[type=text] {
     display: table-cell;
     padding: 10px;
-    margin-bottom: 10px 0;
+    margin-bottom: 0px;
     border:0;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
@@ -263,43 +267,18 @@ input[type=submit] {
     position: absolute;
     right: 100px;
 }
+
 footer {
+    position: relative;
     width: 100%;
     height: 70px;
-    margin: 0;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 675px) {
     h1 {
-        font-size: 1.5em;
-        position: absolute;
-        padding: 3px;
-        float: left; 
-        margin-left: 2%;
-        margin-top: 0px;
-        font-weight: bolder;
-    }
-
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.0em;
-        position: absolute;
-        padding: 3px;
-        float: left; 
-        margin-left: 2%;
-        margin-top: 0px;
-        font-weight: bolder;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 0.5em;
-        position: absolute;
-        padding: 3px;
-        float: left; 
-        margin-left: 2%;
-        margin-top: 0px;
-        font-weight: bolder;
+        display: inline-block;
     }
 }
