@@ -149,9 +149,12 @@ h1:hover {
 .apps {
     max-width: 100%;
     height: 535px;
-    border: 1px solid white;
-    text-align: center;  
+    border: 3px solid rgb(64 190 239);
+    text-align: center;
     padding: 26px;
+    background: white;
+    color: black;
+    font-weight: bolder;
 }
 .apps-header {
     width: 100%;
@@ -203,6 +206,7 @@ h1:hover {
 .flexbox-item-3 {
     background-color: rgb(64, 190, 239);
     background-image: url(https://www.freepnglogos.com/uploads/logo-website-png/logo-website-cropped-website-logo-header-vreference-29.png);
+    background-image: url(..//assets/images/horiseon-img.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -300,5 +304,22 @@ footer {
         padding: 26px;
         background: rgb(64, 190, 239);
         color: black;
+    }
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+    #box-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .flexbox {
+        border: 3px solid black;
+        background-color: white;
+        min-height: 92px;
+        width: 94px;
+    
     }
 }
